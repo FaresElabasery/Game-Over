@@ -20,186 +20,214 @@
     <title>Game Over</title>
 </head>
 
-<body >
-    <section class="game">
-        <header class="bg-container overflow-hidden">
-        </header>
-        <section class="Navbar m-auto sticky-top mb-4">
-            <div class="container ">
-                <nav
-                    class="navbar navbar-expand-lg navbar-dark rounded-4 shadow-lg col-md-10  bg-custom mx-auto ">
-                    <div class="container">
-                        <a class="navbar-brand text-uppercase fs-5 fw-lighter" href="#">
-                            <img src="images/logo.png" alt="logo img" style="width: 40px;">
-                            Game Reviews
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#mmorpg">mmorpg</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#shooter">shooter</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#sailing">sailing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#permadeath">permadeath</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#superhero">superhero</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#pixel">pixel</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+<body>
+    <div class="loaderContanier">
+        <span class="loader"></span>
+    </div>
+
+
+    <header class="bg-container overflow-hidden">
+    </header>
+    <nav class="navbar navbar-expand-lg z-3 rounded-4 shadow-lg col-md-9 col-sm-8  bg-custom " id="header">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fs-5 text-white fw-lighter" href="#">
+                <img src="images/logo.png" alt="logo img" style="width: 40px;" onload=lazy>
+                Game Reviews
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#mmorpg">mmorpg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shooter">shooter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sailing">sailing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#permadeath">permadeath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#superhero">superhero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pixel">pixel</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <section class="Cards">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
-                            <img class="card-img-top p-3" src="images/image.png" alt="Title" />
-                            <div class="card-body  p-3">
-                                <div class="card-title d-flex justify-content-between fs-14 ">
-                                    <span>Tarisland</span>
-                                    <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
-                                </div>
-                                <p class="card-text fs-14 text-center opacity-50">
-                                    A,cross-platform,MMORPG,developed,by,Level,Infinite,and
-                                </p>
+        </div>
+    </nav>
+    <section class="Cards py-5" id="cards">
+        <div class="container">
+            <div class="row" id="CardContainer">
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
+                        <img class="card-img-top p-3" src="images/image.png" alt="Title" />
+                        <div class="card-body  p-3">
+                            <div class="card-title d-flex justify-content-between fs-14 ">
+                                <span>Tarisland</span>
+                                <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
                             </div>
-                            <div class="card-footer d-flex justify-content-between ">
-                                <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
-                                <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
-                            </div>
+                            <p class="card-text fs-14 text-center opacity-50">
+                                A,cross-platform,MMORPG,developed,by,Level,Infinite,and
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
-                            <img class="card-img-top p-3" src="images/image.png" alt="Title" />
-                            <div class="card-body  p-3">
-                                <div class="card-title d-flex justify-content-between fs-14 ">
-                                    <span>Tarisland</span>
-                                    <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
-                                </div>
-                                <p class="card-text fs-14 text-center opacity-50">
-                                    A,cross-platform,MMORPG,developed,by,Level,Infinite,and
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between ">
-                                <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
-                                <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
-                            <img class="card-img-top p-3" src="images/image.png" alt="Title" />
-                            <div class="card-body  p-3">
-                                <div class="card-title d-flex justify-content-between fs-14 ">
-                                    <span>Tarisland</span>
-                                    <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
-                                </div>
-                                <p class="card-text fs-14 text-center opacity-50">
-                                    A,cross-platform,MMORPG,developed,by,Level,Infinite,and
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between ">
-                                <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
-                                <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
-                            <img class="card-img-top p-3" src="images/image.png" alt="Title" />
-                            <div class="card-body  p-3">
-                                <div class="card-title d-flex justify-content-between fs-14 ">
-                                    <span>Tarisland</span>
-                                    <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
-                                </div>
-                                <p class="card-text fs-14 text-center opacity-50">
-                                    A,cross-platform,MMORPG,developed,by,Level,Infinite,and
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between ">
-                                <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
-                                <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
-                            <img class="card-img-top p-3" src="images/image.png" alt="Title" />
-                            <div class="card-body  p-3">
-                                <div class="card-title d-flex justify-content-between fs-14 ">
-                                    <span>Tarisland</span>
-                                    <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
-                                </div>
-                                <p class="card-text fs-14 text-center opacity-50">
-                                    A,cross-platform,MMORPG,developed,by,Level,Infinite,and
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between ">
-                                <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
-                                <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
-                            <img class="card-img-top p-3" src="images/image.png" alt="Title" />
-                            <div class="card-body  p-3">
-                                <div class="card-title d-flex justify-content-between fs-14 ">
-                                    <span>Tarisland</span>
-                                    <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
-                                </div>
-                                <p class="card-text fs-14 text-center opacity-50">
-                                    A,cross-platform,MMORPG,developed,by,Level,Infinite,and
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between ">
-                                <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
-                                <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
-                            <img class="card-img-top p-3" src="images/image.png" alt="Title" />
-                            <div class="card-body  p-3">
-                                <div class="card-title d-flex justify-content-between fs-14 ">
-                                    <span>Tarisland</span>
-                                    <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
-                                </div>
-                                <p class="card-text fs-14 text-center opacity-50">
-                                    A,cross-platform,MMORPG,developed,by,Level,Infinite,and
-                                </p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between ">
-                                <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
-                                <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
-                            </div>
+                        <div class="card-footer d-flex justify-content-between ">
+                            <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
+                            <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
                         </div>
                     </div>
                 </div>
-        </section>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
+                        <img class="card-img-top p-3" src="images/image.png" alt="Title" />
+                        <div class="card-body  p-3">
+                            <div class="card-title d-flex justify-content-between fs-14 ">
+                                <span>Tarisland</span>
+                                <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
+                            </div>
+                            <p class="card-text fs-14 text-center opacity-50">
+                                A,cross-platform,MMORPG,developed,by,Level,Infinite,and
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between ">
+                            <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
+                            <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
+                        <img class="card-img-top p-3" src="images/image.png" alt="Title" />
+                        <div class="card-body  p-3">
+                            <div class="card-title d-flex justify-content-between fs-14 ">
+                                <span>Tarisland</span>
+                                <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
+                            </div>
+                            <p class="card-text fs-14 text-center opacity-50">
+                                A,cross-platform,MMORPG,developed,by,Level,Infinite,and
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between ">
+                            <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
+                            <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
+                        <img class="card-img-top p-3" src="images/image.png" alt="Title" />
+                        <div class="card-body  p-3">
+                            <div class="card-title d-flex justify-content-between fs-14 ">
+                                <span>Tarisland</span>
+                                <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
+                            </div>
+                            <p class="card-text fs-14 text-center opacity-50">
+                                A,cross-platform,MMORPG,developed,by,Level,Infinite,and
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between ">
+                            <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
+                            <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
+                        <img class="card-img-top p-3" src="images/image.png" alt="Title" />
+                        <div class="card-body  p-3">
+                            <div class="card-title d-flex justify-content-between fs-14 ">
+                                <span>Tarisland</span>
+                                <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
+                            </div>
+                            <p class="card-text fs-14 text-center opacity-50">
+                                A,cross-platform,MMORPG,developed,by,Level,Infinite,and
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between ">
+                            <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
+                            <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card text-start border border-1 border-dark bg-transparent text-light h-100">
+                        <img class="card-img-top p-3" src="images/image.png" alt="Title" />
+                        <div class="card-body  p-3">
+                            <div class="card-title d-flex justify-content-between fs-14 ">
+                                <span>Tarisland</span>
+                                <span class="bg-primary py-1 px-2 rounded-2 fs-12 fw-bold">Free</span>
+                            </div>
+                            <p class="card-text fs-14 text-center opacity-50">
+                                A,cross-platform,MMORPG,developed,by,Level,Infinite,and
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between ">
+                            <span class="bg-dark badge fs-10 fw-bold">MMORPG</span>
+                            <span class="bg-dark badge fs-10 fw-bold">PC (Windows)</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+    </section>
+    <section class="details-section d-none position-fixed top-0 start-0 end-0 vh-100 bg-dark z-3 py-3 overflow-y-auto"
+        id="details">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Detials Game</h3>
+                <i class="fa-solid fa-close fa-2x" id="closeBtn"></i>
+            </div>
+            <div class="row" id="detailsContainer">
+                <div class="col-md-4">
+                    <img src="images/image.png" alt="game photo" class="w-100">
+                </div>
+                <div class="col-md-8">
+                    <h3>Title: Neverwinter</h3>
+                    <ul class="list-unstyled">
+                        <li>Category: <span class="badge bg-info text-dark mb-3">MMORPG</span></li>
+                        <li>Platform: <span class="badge bg-info text-dark mb-3">Windows</span></li>
+                        <li>Status: <span class="badge bg-info text-dark ">Live</span></li>
+                    </ul>
+                    <p class="lead fs-14">If you’re a fan of Dungeons and Dragons, have I got a game for you!
+                        Neverwinter, developed by
+                        Cryptic Studios and published by Perfect World Entertainment, is based on the critically
+                        acclaimed fantasy role playing game and the best part is ­ it’s free to play. In the world
+                        of Neverwinter, you will explore and defend one of the most beloved cities from the Dungeons
+                        and Dragons Forgotten Realms Campaign Setting, as it rises from the ashes of total
+                        destruction. In this totally immersive MMORPG you will go from the besieged walls of the
+                        city, to the subterranean passageways and search for forgotten secrets and lost treasure
+                        along the way. Neverwinter is completely free to play, from the very first level, all the
+                        way up to the level cap, so anyone is able to experience the engaging action and combat it
+                        brings. You don’t have to worry about tab­targeting or auto­attacking to defeat your
+                        enemies, Neverwinter provides an amazing combat experience where every action will require
+                        planning and feel visceral and look spectacular. Neverwinter also comes with Foundry, which
+                        is a dynamic tool set that will provide you with the game assets and a sandbox environment
+                        that will allow you to create your own adventures ­ and when you are ready to unveil your
+                        creation to the world ­ you are able to hook it up directly to the existing work so everyone
+                        else in the community can experience it as well! Whether you are familiar with Dungeons and
+                        Dragons from the tabletop game or from the novels, Neverwinter has recreated many of the
+                        iconic classes, locations and encounters that you will know and love! You might choose to go
+                        on an adventure as a mighty Guardian Fighter, choose to deceive foes as a Trickster Rogue,
+                        or follow the righteous path as a Devoted Cleric, but whatever journey you decide to take in
+                        Neverwinter you will face Kobolds, Beholders, Mimics and many other creatures from the
+                        Dungeons and Dragons universe, and you will surely feel right at home!
+                    </p>
+                    <a href="#" class="btn btn-outline-warning text-white">Show Game</a>
+                </div>
+            </div>
+        </div>
     </section>
 
 
+
     <!--  js -->
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
