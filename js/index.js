@@ -31,7 +31,7 @@ function stickyHeader() {
 closeBtn.addEventListener("click", () => {
     details.classList.add('d-none');
 });
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "/") {
     getGame("mmorpg");
     navAnchors[0].classList.add("active");
 } else {
