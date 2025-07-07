@@ -13,8 +13,10 @@ export default class GameDetails {
         };
 
         try {
+            document.querySelector(".loaderContanier").style.display='flex';
             const response = await fetch(url, options);
             const result = await response.json();
+            document.querySelector(".loaderContanier").style.display='none';
             console.log(result);
             return result;
         } catch (error) {
